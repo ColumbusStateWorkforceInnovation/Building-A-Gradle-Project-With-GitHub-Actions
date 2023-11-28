@@ -51,7 +51,7 @@ name: Build Gradle project
 ```
 
 ### Question 1 (Provide your answers in GitHubActionsQuestions.txt):
-Is the name: syntax required for a GitHub Actions workflow? What does it do? What are the advantages of having a name defined for a workflow file?
+>Is the name: syntax required for a GitHub Actions workflow? What does it do? What are the advantages of having a name defined for a workflow file?
 
 8. Define the Action that will act as the trigger for this workflow. In this case it will be every time a new commit(s) is pushed to the remote:
 ```
@@ -71,7 +71,7 @@ runs-on: ubuntu-latest
 11. Define a `steps:` clause nested under the `build-gradle-project:` below `runs-on: ubuntu-latest`. Keep in mind proper indentation:
 
 ### Question 2:
-What are the advantages of running workflows on runners? How would it differ from running the tests directly on a host? How do runners relate to dockerized containers? 
+>What are the advantages of running workflows on runners? How would it differ from running the tests directly on a host? How do runners relate to dockerized containers? 
 
 ```
 steps:
@@ -93,11 +93,10 @@ steps:
   run: ./gradlew build
 ```
 ### Question 3:
-Why would you want to create a new runner and fresh repository for each build?
+>Why would you want to create a new runner and fresh repository for each build?
 
 13. Rename the work flow to `gradle_build.yml` and then commit your changes by selecting the green commit button in the top-right.
 14. When returing to the main repo page, refresh your web-browser and notice that there should be a yellow dot or green checkmark at the top of the file list next to the latest commit id. Return to the Actions tab and you should see that actions has ran the workflow you just added. If you see a red `x`, that means the build failed and you will need to verify that the syntax of your workflow is correct. 
 
 ### Question 4:
-
-Navigate to the "build" job for the most recent workflow. Select the gear icon in the top right and then select the "View raw logs". Copy paste the entire log to the bottom of your GitHubActionsQuestions.txt file
+>Navigate to the "build" job for the most recent workflow. Select the gear icon in the top right and then select the "View raw logs". Copy paste the entire log to the bottom of your GitHubActionsQuestions.txt file
